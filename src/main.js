@@ -5,6 +5,12 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import App from './App'
 import router from './router'
+import ThePond from '@/components/ThePond'
+import HelloWorld from '@/components/HelloWorld'
+
+Vue.component('the-pond', ThePond)
+Vue.component('hello-world', HelloWorld)
+
 
 Vue.use(Vuetify)
 
