@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <header-up></header-up>
-    <br>
     <the-coin></the-coin>
     <the-pond></the-pond>
   </div>
@@ -9,7 +8,10 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: {
+    showModal: false
+  }
 }
 </script>
 

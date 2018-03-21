@@ -18,7 +18,7 @@
     computed: {
       pondGo: function () {
       window.addEventListener('load', _ => {
-  const FONT_SIZE = '72px';
+  const FONT_SIZE = '13px';
   const FONT_FAMILY = 'monospace';
 
   // ctx.measureText() only returns width for now, so we'll just place characters
@@ -117,6 +117,7 @@
   text-align: center;
   left: 50%;
   top: 50%;
+  margin-top: 20px;
 }
 
 h1 {

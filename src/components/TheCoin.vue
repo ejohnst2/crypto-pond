@@ -1,12 +1,14 @@
 <template>
   <div class="coinbox">
-    <v-btn color="green">BTC</v-btn>
+    <v-btn id="show-modal" @click="showModal = true" color="green">BTC</v-btn>
     <v-btn color="grey">ETC</v-btn>
     <v-btn color="blue">LTC</v-btn>
   </div>
 </template>
 
 <script>
+
+import LightBox from './LightBox'
 
 export default {
   name: 'TheCoin'
@@ -17,10 +19,10 @@ export default {
 <style scoped>
 
 .coinbox {
-  margin: 20px;
+  margin: 20px 20px;
 }
 
-.animation-target {
+.animationtarget {
   -webkit-animation: animation 1007ms linear both;
   animation: animation 1007ms linear both;
 }
