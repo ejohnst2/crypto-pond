@@ -2,6 +2,7 @@
   <div id="app">
     <header-up></header-up>
     <br>
+    <the-coin></the-coin>
     <the-pond></the-pond>
   </div>
 </template>

@@ -8,10 +8,14 @@ import router from './router'
 import ThePond from './components/ThePond'
 import HelloWorld from './components/HelloWorld'
 import HeaderUp from './components/HeaderUp'
+import TheCoin from './components/TheCoin'
+
 
 Vue.component('the-pond', ThePond)
 Vue.component('hello-world', HelloWorld)
 Vue.component('header-up', HeaderUp)
+Vue.component('the-coin', TheCoin)
+
 
 
 Vue.use(Vuetify)

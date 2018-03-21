@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>⸨ {{msg}} ⸩</h1>
     <body>
-      <pre v-on:click="say('send ETH to the magical address')">{{pondGo}}</pre>
+      <pre v-on:click="say('send ETH to the fountain of youth')">{{pondGo}}</pre>
       <label>viewing angle:<input max="1" min="0.2" step="0.1" type="range" value="0.2" /></label>
     </body>
   </div>
@@ -12,7 +11,8 @@
   export default {
     data: function() {
       return {
-        msg: 'Toss a coin in the pond'
+        msg: 'Toss a coin in the pond',
+        wallet: 'walletaddresshere',
       }
     },
     computed: {
@@ -113,7 +113,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font: 8px monospace;
-  position: absolute;
+  position: fixed;
   text-align: center;
   left: 50%;
   top: 50%;
