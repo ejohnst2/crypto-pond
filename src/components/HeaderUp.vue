@@ -20,10 +20,15 @@ export default {
 h1 {
   display: inline-block;
   font-size: 3em;
-  color: #efefef;
-}
-h1:hover, h1:hover + pre, h1:hover + pre + label {
   color: blue;
+  animation: blinker 1s linear infinite;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 </style>
