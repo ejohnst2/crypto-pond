@@ -2,11 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{reversedMessage}} {{msg}}</h2>
-      <div>
-        <v-btn color="blue">Success</v-btn>
-        <v-btn color="green">Error</v-btn>
-        <v-btn color="grey">Warning</v-btn>
-      </div>
   </div>
 </template>
 
@@ -15,7 +10,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to the CryptoPond'
     }
   },
   computed: {

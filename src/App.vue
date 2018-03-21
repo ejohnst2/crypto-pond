@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <header-up></header-up>
+    <the-coin></the-coin>
+    <the-pond></the-pond>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: {
+    showModal: false
+  }
 }
 </script>
 
