@@ -1,10 +1,9 @@
 <template>
   <div>
+    <h1>⸨ {{msg}} ⸩</h1>
     <body>
-      <h1>⸨ POND ⸩</h1>
-      <pre>{{pondGo}}</pre>
+      <pre v-on:click="say('send ETH to the magical address')">{{pondGo}}</pre>
       <label>viewing angle:<input max="1" min="0.2" step="0.1" type="range" value="0.2" /></label>
-      <h1>{{msg}}</h1>
     </body>
   </div>
 </template>
@@ -95,8 +94,18 @@
 });
 
     },
+
+    walletPopUp: function() {
+
+    },
+  },
+  methods: {
+    say: function (message) {
+      alert(message)
+    }
   }
 }
+
 </script>
 
 <style scoped>
